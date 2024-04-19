@@ -1,0 +1,41 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollegeClassCentral</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CollegeClassCentral</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <?php
+                    // Check if the user is logged in (Replace with your login mechanism)
+                    $loggedIn = true; // For demonstration purposes; replace with actual logic
+                    if (!$loggedIn) {
+                        echo '<li><a href="signup.html">Sign Up</a></li>';
+                    }
+                    ?>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content of the page -->
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CollegeClassCentral. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

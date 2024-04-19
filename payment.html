@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css"> <!-- Include your CSS file -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Payment</h1>
+            <nav>
+                <ul>
+                    <li><a href="college class central.html">Home</a></li>
+                    <li><a href="college class central.html">Courses</a></li>
+                    <li><a href="college class central.html">About</a></li>
+                    <li><a href="college class central.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2>Complete Your Purchase</h2>
+            <p>Please select your payment method and enter your payment details below:</p>
+            <!-- Payment form -->
+            <form action="process_payment.php" method="POST"> <!-- Replace with your payment processing script -->
+                <div class="form-group">
+                    <label for="payment_method">Payment Method:</label>
+                    <select name="payment_method" id="payment_method">
+                        <option value="credit_card">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <!-- Add more payment options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="card_number">Card Number:</label>
+                    <input type="text" id="card_number" name="card_number" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiry_date">Expiry Date:</label>
+                    <input type="text" id="expiry_date" name="expiry_date" placeholder="MM/YYYY" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                </div>
+                <button type="submit" class="btn">Confirm Payment</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        document.getElementById("paymentForm").addEventListener("submit", function(event) {
+            // Prevent default form submission
+            event.preventDefault();
+            
+            // Perform any necessary client-side validation here
+
+            // After validation, redirect to home page
+            <li><a href="college class central.html">Contact</a></li>
+        });
+    </script>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CollegeClassCentral. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
